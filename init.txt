@@ -144,9 +144,11 @@ reboot
 #          After reboot               #
 #######################################
 
+lspci -v | grep -A1 -e VGA -e 3D
+
 # install important packages
-sudo pacman -S firefox alacritty alsa-utils pipewire git bluez
-sudo pacman -S xf86-video-fbdev xorg xorg-xinit awesome
+sudo pacman -S firefox alacritty alsa-utils git bluez
+sudo pacman -S xf86-video-amdgpu xorg xorg-xinit awesome
 
 # enable bluetooth
 systemctl enable bluetooth.service
