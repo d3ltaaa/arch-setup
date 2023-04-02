@@ -29,6 +29,8 @@ yay -S font-manager-git
 # set up polybar
 # set up menu
 # set up audio
+# set up remnote
+# mv appimage in to /usr/bin and rename it to remnote or Remnote
 sudo pacman -S alsa-utils pulseaudio pavucontrol
 systemctl --user enable pulseaudio && systemctl --user start pulseaudio
 
