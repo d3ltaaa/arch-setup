@@ -161,7 +161,7 @@ sudo systemctl enable bluetooth.service
 sudo systemctl enable bluetooth-mesh.service
 
 # install important apps
-sudo pacman -S firefox git  
+sudo pacman -S firefox git base-devel
 
 # install terminal of choice
 # sudo pacman -S alacritty
