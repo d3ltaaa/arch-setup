@@ -31,6 +31,7 @@ yay -S font-manager-git
 # set up audio
 # set up remnote
 # mv appimage in to /usr/bin and rename it to remnote or Remnote
+# or add the path to the ~/.bash_profile bc dmenu reads this file
 sudo pacman -S alsa-utils pulseaudio pavucontrol
 systemctl --user enable pulseaudio && systemctl --user start pulseaudio
 
