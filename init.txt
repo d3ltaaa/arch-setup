@@ -112,7 +112,6 @@ useradd -m falk
 passwd falk
 usermod -aG wheel,audio,video,optical falk
 
-
 # install sudo
 pacman -S sudo 
 
@@ -147,20 +146,28 @@ reboot
 lspci -v | grep -A1 -e VGA -e 3D
 
 # install important packages
-sudo pacman -S firefox alacritty alsa-utils git bluez
-sudo pacman -S xf86-video-amdgpu xorg xorg-xinit awesome
+sudo pacman -S xf86-video-amdgpu xorg xorg-xinit
 
-# enable bluetooth
-systemctl enable bluetooth.service
-systemctl enable bluetooth-mesh.service
+# install wm of choice
+# sudo pacman -S awesome
 
-# xinitrc file
+# install audio-controls
+sudo pacman -S alsa-utils pulseaudio pavucontrol
+systemctl --user enable pulseaudio
+
+# install bluetooth-controls
+sudo pacman -S bluez bluez-utils pulseaudio-bluetooth blueman
+sudo systemctl enable bluetooth.service
+sudo systemctl enable bluetooth-mesh.service
+
+# install important apps
+sudo pacman -S firefox git  
+
+# install terminal of choice
+# sudo pacman -S alacritty
+
+# configure xinitrc file
 cp /etc/X11/xinit/xinitrc /home/falk/.xinitrc
 sudo vim .xinitrc
 # delete last 5 lines
-"exec awesome"
-
-######################################
-mkdir -p /home/falk/.config/awesome
-cd .config
-cp /etc/xdg/awesome/rc.lua /home/falk/.config/awesome
+#"exec awesome"
