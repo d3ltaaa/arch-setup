@@ -22,7 +22,7 @@ timedatectl set-ntp true
 fdisk -l
 
 # installing except
-pacman --noconfirm --Sy expect
+pacman --noconfirm -Sy expect
 
 curl https://raw.githubusercontent.com/d3ltaaa/arch-setup/main/partition_disk.exp > partition_disk.exp
 chmod +x partition_disk.exp
