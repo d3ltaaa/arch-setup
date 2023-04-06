@@ -1,0 +1,94 @@
+#!/usr/bin/expect -f
+
+puts --nonewline "Enter the disk name (e.g. /dev/sda): "
+read disk
+puts --nonewline "Enter the EFI size [GB]: " 
+read efi_size
+puts --nonewline "Enter the SWAP size [GB]: "
+read swap_size
+puts "HOME size defaults to the rest"
+spawn fdisk $disk 
+
+expect "Command (m for help): "
+send "g\r"
+expect "Command (m for help): "
+send "n\r"
+expect "Partition number *default*"
+send "1\r"
+expect "First sector *default*"
+send "\r"
+expect "Last sector *default*"
+send "+${efi_size}G\r"
+
+expect {
+	"Do you want to remove the signature? [Y]es/[N]o: "
+		send "y\r"
+	}
+
+expect "Command (m for help): "
+send "n\r"
+expect "Partition number *default*"
+send "2\r"
+expect "First sector *default*"
+send "\r"
+expect "Last sector *default*"
+send "+${swap_size}G\r"
+
+expect {
+	"Do you want to remove the signature? [Y]es/[N]o: "
+		send "y\r"
+	}
+
+expect "Command (m for help): "
+send "n\r"
+expect "Partition number *default*"
+send "3\r"
+expect "First sector *default*"
+send "\r"
+expect "Last sector *default*"
+send "\r"
+
+expect {
+	"Do you want to remove the signature? [Y]es/[N]o: "
+		send "y\r"
+	}
+
+expect "Command (m for help): "
+send "t\r"
+expect "Partition number*default*"
+send "1\r"
+expect "Partition type or alias (type L to list all): "
+send "1\r"
+
+expect {
+	"Do you want to remove the signature? [Y]es/[N]o: "
+		send "y\r"
+	}
+
+expect "Command (m for help): "
+send "t\r"
+expect "Partition number*default*"
+send "2\r"
+expect "Partition type or alias (type L to list all): "
+send "19\r"
+
+expect {
+	"Do you want to remove the signature? [Y]es/[N]o: "
+		send "y\r"
+	}
+
+expect "Command (m for help): "
+send "t\r"
+expect "Partition number*default*"
+send "3\r"
+expect "Partition type or alias (type L to list all): "
+send "20\r"
+
+expect {
+	"Do you want to remove the signature? [Y]es/[N]o: "
+		send "y\r"
+	}
+
+expect "Command (m for help): "
+send "w\r"
+
