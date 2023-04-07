@@ -125,7 +125,7 @@ part3_path=/home/$username/delta_arch_install3.sh
 sed '1,/^########### Part 3 ##########$/d' arch_install2.sh > $part3_path
 chown $username:$username $part3_path
 chmod +x $part3_path
-su -c $part3_path -s /bin/sh $username
+su -c $part3_path -s /bin/sh $user
 
 exit
 
