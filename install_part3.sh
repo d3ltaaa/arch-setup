@@ -45,6 +45,7 @@ ln -s ~/.setup/config/suckless ~/.config
 ln -s ~/.setup/config/neofetch ~/.config
 
 ln -s ~/.setup/system/.dwm ~/
+sudo rm -r ~/.scripts
 ln -s ~/.setup/system/.scripts ~/
 ln -s ~/.setup/system/.xinitrc ~/
 rm ~/.bash_profile
