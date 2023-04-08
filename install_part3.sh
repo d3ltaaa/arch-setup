@@ -30,7 +30,7 @@ touch remnote
 echo "/opt/./remnote" > remnote
 
 # Spotify
-yay -S ncspot
+sudo yay -S ncspot
 cd ~/.scripts
 touch spotify
 echo "st -e ncspot" > spotify
