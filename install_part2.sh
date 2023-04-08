@@ -28,7 +28,7 @@ useradd -m $user
 echo "Password for $user: "
 passwd $user
 usermod -aG wheel,audio,video $user
-pacman -S sudo
+pacman --noconfirm -S sudo
 sed -i '/%wheel\s\+ALL=(ALL)\s\+ALL/s/^#//' /etc/sudoers
 
 
@@ -41,8 +41,8 @@ read efi_part
 mount $efi_part /mnt/boot/EFI
 # GRUB
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
-sed -i 's/quiet/pci=noaer/g' /etc/default/grub
-sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
+# sed -i 's/quiet/pci=noaer/g' /etc/default/grub
+# sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # installing packages
