@@ -1,4 +1,4 @@
-pacman -Sy --noconfirm sed
+pacman -S --noconfirm sed
 sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
 
 # Time
@@ -62,3 +62,9 @@ pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-devel \
 systemctl enable NetworkManager
 systemctl enable bluetooth.service
 systemctl --user enable pulseaudio
+
+exit
+
+umount -R /mnt
+
+reboot
