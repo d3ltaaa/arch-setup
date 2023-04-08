@@ -46,22 +46,14 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB 
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # installing packages
-pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-devel \
-	networkmanager \
-	alsa-utils pulseaudio pavucontrol \
-	bluez bluez-utils pulseaudio-bluetooth blueman \
-	firefox thunar \
-	nitrogen xournalpp discord \
-	neofetch ranger git \
-	flatpak \
-	fuse2
+pacman --noconfirm -S networkmanager
+
 
 
 
 # enabling services
 systemctl enable NetworkManager
-systemctl enable bluetooth.service
-systemctl --user enable pulseaudio
+
 
 exit
 
