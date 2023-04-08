@@ -1,4 +1,4 @@
-set -x
+# set -x
 sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-devel \
 	alsa-utils pulseaudio pavucontrol \
 	bluez bluez-utils pulseaudio-bluetooth blueman \
@@ -60,5 +60,12 @@ sudo make install
 cd ~/.config/suckless/dmenu
 make 
 sudo make install
+
+# create remove script
+
+touch ~/remove.sh
+echo "rm /install_part2.sh" >> remove.sh
+echo "rm /install_part3.sh" >> remove.sh
+chmod +x ~/remove.sh
 
 echo "Remember: Install Synergy"
