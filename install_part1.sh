@@ -1,7 +1,7 @@
 echo part-1
 loadkeys de-latin1
 
-sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
+# sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
 
 timedatectl set-ntp true
 
