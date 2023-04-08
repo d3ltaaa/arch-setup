@@ -30,8 +30,7 @@ echo "Password for $user: "
 passwd $user
 usermod -aG wheel,audio,video $user
 pacman --noconfirm -S sudo
-sed -i 's/^# %wheel ALL=(ALL) ALL$/ %wheel ALL=(ALL) ALL/' /etc/sudoers
-
+echo '%wheel ALL=(ALL) ALL' | sudo EDITOR='tee -a' visudo
 
 pacman -S --noconfirm grub efibootmgr dosfstools os-prober mtools
 
