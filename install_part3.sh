@@ -1,3 +1,15 @@
+sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-devel \
+	alsa-utils pulseaudio pavucontrol \
+	bluez bluez-utils pulseaudio-bluetooth blueman \
+	firefox thunar \
+	nitrogen xournalpp discord \
+	neofetch ranger git \
+	flatpak \
+	fuse2
+
+systemctl enable bluetooth.service
+systemctl --user enable pulseaudio
+
 mkdir ~/.scripts
 mkdir ~/.yay
 
