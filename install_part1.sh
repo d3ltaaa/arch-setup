@@ -30,4 +30,4 @@ pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 
-curl https://raw.githubusercontent.com/d3ltaaa/arch-setup/main/install_part2.sh > install_part2.sh
+curl https://raw.githubusercontent.com/d3ltaaa/arch-setup/main/install_part2.sh > install_part2.sh && chmod +x install_part2.sh
