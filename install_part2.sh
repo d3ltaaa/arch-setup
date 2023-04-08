@@ -39,7 +39,7 @@ pacman -S --noconfirm grub efibootmgr dosfstools os-prober mtools
 mkdir /boot/EFI
 echo "Enter EFI partition (1) (e.g.: /dev/nvme0n1p1): "
 read efi_part
-mount $efi_part /mnt/boot/EFI
+mount $efi_part /boot/EFI
 # GRUB
 grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader=GRUB --removable
 # sed -i 's/quiet/pci=noaer/g' /etc/default/grub
