@@ -4,7 +4,7 @@ sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-dev
 	bluez bluez-utils pulseaudio-bluetooth blueman \
 	firefox thunar \
 	nitrogen xournalpp discord \
-	neofetch ranger git \
+	neofetch ranger git vim \
 	flatpak \
 	fuse2
 
@@ -47,7 +47,9 @@ ln -s ~/.setup/config/neofetch ~/.config
 ln -s ~/.setup/system/.dwm ~/
 ln -s ~/.setup/system/.scripts ~/
 ln -s ~/.setup/system/.xinitrc ~/
+rm ~/.bash_profile
 ln -s ~/.setup/system/.bash_profile ~/
+rm ~/.bashrc
 ln -s ~/.setup/system/.bashrc ~/
 
 # building suckless software
