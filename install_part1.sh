@@ -1,3 +1,4 @@
+set -x
 echo part-1
 loadkeys de-latin1
 
