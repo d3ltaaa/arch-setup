@@ -2,7 +2,7 @@ set -x
 echo part-1
 loadkeys de-latin1
 
-# sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
+sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
 
 timedatectl set-ntp true
 
@@ -29,3 +29,5 @@ mount $linux_part /mnt
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
+
+curl https://raw.githubusercontent.com/d3ltaaa/arch-setup/main/install_part2.sh > install_part2.sh
