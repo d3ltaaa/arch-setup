@@ -40,7 +40,7 @@ echo "Enter EFI partition (1) (e.g.: /dev/nvme0n1p1): "
 read efi_part
 mount $efi_part /mnt/boot/EFI
 # GRUB
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader=GRUB --removable
+grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader=GRUB --removable
 # sed -i 's/quiet/pci=noaer/g' /etc/default/grub
 # sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
