@@ -58,8 +58,12 @@ cd ~/.config/suckless/dmenu
 make 
 sudo make install
 
-# create remove script
+mkdir -p ~/Pictures/Wallpapers
+cd ~/Pictures/Wallpapers
+curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-systems/archlinux.png > archlinux.png
 
+# create remove script
+cd
 touch ~/remove.sh
 echo "rm /install_part2.sh" >> ~/remove.sh
 echo "rm ~/install_part3.sh" >> ~/remove.sh
