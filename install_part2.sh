@@ -55,8 +55,8 @@ pacman --noconfirm -S networkmanager
 systemctl enable NetworkManager
 
 
-exit
+# exit
 
-umount -R /mnt
+# umount -R /mnt
 
-reboot
+# reboot
