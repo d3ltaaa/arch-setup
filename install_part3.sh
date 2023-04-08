@@ -1,3 +1,4 @@
+set -x
 sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-devel \
 	alsa-utils pulseaudio pavucontrol \
 	bluez bluez-utils pulseaudio-bluetooth blueman \
