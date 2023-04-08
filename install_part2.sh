@@ -30,7 +30,7 @@ echo "Password for $user: "
 passwd $user
 usermod -aG wheel,audio,video $user
 pacman --noconfirm -S sudo
-sed -i '/^# %wheel\s\+ALL=(ALL)\s\+ALL/s/^#//' /etc/sudoers
+sed -i 's/^# %wheel ALL=(ALL) ALL$/ %wheel ALL=(ALL) ALL/' /etc/sudoers
 
 
 pacman -S --noconfirm grub efibootmgr dosfstools os-prober mtools
