@@ -11,7 +11,6 @@ sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-dev
 systemctl enable bluetooth.service
 systemctl --user enable pulseaudio
 
-mkdir ~/.scripts
 mkdir ~/.yay
 
 # yay
@@ -25,15 +24,10 @@ makepkg -si
 curl -L -o remnote https://www.remnote.com/desktop/linux
 chmod +x remnote
 sudo mv remnote /opt
-cd ~/.scripts
-touch remnote
-echo "/opt/./remnote" > remnote
 
 # Spotify
 sudo yay -S ncspot
-cd ~/.scripts
-touch spotify
-echo "st -e ncspot" > spotify
+
 
 # .setup
 cd ~/
