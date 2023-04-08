@@ -67,7 +67,7 @@ sudo make install
 
 touch ~/remove.sh
 echo "rm /install_part2.sh" >> ~/remove.sh
-echo "rm /install_part3.sh" >> ~/remove.sh
+echo "rm ~/install_part3.sh" >> ~/remove.sh
 chmod +x ~/remove.sh
 
 echo "Remember: Install Synergy"
