@@ -156,6 +156,6 @@ cd ~/.scripts
 touch spotify
 echo "st -e ncspot" > spotify
 
-
+echo "it did go through !!!!!!!!!!!!!!!!!"
 
 
