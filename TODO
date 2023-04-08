@@ -11,4 +11,4 @@ script: volume_menu
 script: settings
 git: find out how to manage scripts
 pacman: learn how to maintain arch
-
+dm: try lightdm
