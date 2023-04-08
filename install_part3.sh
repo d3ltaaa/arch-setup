@@ -35,4 +35,30 @@ cd ~/.scripts
 touch spotify
 echo "st -e ncspot" > spotify
 
-echo "it did go through !!!!!!!!!!!!!!!!!"
+# .setup
+cd ~/
+git clone https://github.com/d3ltaaa/.setup.git
+
+# setup symlinks
+mkdir -p ~/.config
+ln -s ~/.setup/config/suckless ~/.config
+ln -s ~/.setup/config/neofetch ~/.config
+
+ln -s ~/.setup/system/.dwm ~/
+ln -s ~/.setup/system/.scripts ~/
+ln -s ~/.setup/system/.xinitrc ~/
+ln -s ~/.setup/system/.bash_profile ~/
+ln -s ~/.setup/system/.bashrc ~/
+
+# building suckless software
+cd ~/.config/suckless/dwm
+make 
+sudo make install
+cd ~/.config/suckless/st
+make 
+sudo make install
+cd ~/.config/suckless/dmenu
+make 
+sudo make install
+
+echo "Remember: Install Synergy"
