@@ -74,6 +74,10 @@ sudo unzip /usr/share/fonts/ttf/UbuntuMono.zip
 sudo rm UbuntuMono.zip
 sudo rm UFL.txt
 
+# nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 # create remove script
 cd
 touch ~/remove.sh
