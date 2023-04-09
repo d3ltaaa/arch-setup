@@ -60,9 +60,15 @@ cd ~/.config/suckless/dmenu
 make 
 sudo make install
 
+# wallpapers
 mkdir -p ~/Pictures/Wallpapers
 cd ~/Pictures/Wallpapers
 curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-systems/archlinux.png > archlinux.png
+
+# fonts
+mkdir -p /usr/share/fonts/tty
+curl https://fonts.google.com/download?family=Ubuntu%20Mono > /usr/share/fonts/tty/UbuntuMono.zip
+unzip /usr/share/fonts/tty/UbuntuMono.zip
 
 # create remove script
 cd
