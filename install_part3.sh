@@ -75,8 +75,8 @@ sudo rm UbuntuMono.zip
 sudo rm UFL.txt
 
 # nvim
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+# plug
+# plugins
 
 # create remove script
 cd
