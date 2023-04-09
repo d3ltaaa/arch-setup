@@ -55,8 +55,8 @@ pacman --noconfirm -S networkmanager
 # enabling services
 systemctl enable NetworkManager
 
-curl https://raw.githubusercontent.com/d3ltaaa/arch-setup/main/install_part3.sh > ~/install_part3.sh
-chmod +x ~/install_part3.sh
+curl https://raw.githubusercontent.com/d3ltaaa/arch-setup/main/install_part3.sh > /home/$user/install_part3.sh
+chmod +x /home/$user/install_part3.sh
 # exit
 
 # umount -R /mnt
