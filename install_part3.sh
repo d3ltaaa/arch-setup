@@ -67,6 +67,7 @@ curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-sy
 
 # fonts
 sudo mkdir -p /usr/share/fonts/ttf
+mkdir ~/Downloads
 curl https://fonts.google.com/download?family=Ubuntu%20Mono > ~/Downloads/UbuntuMono.zip
 sudo mv ~/Downloads/UbuntuMono.zip /usr/share/fonts/ttf
 cd /usr/share/fonts/ttf
