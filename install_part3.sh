@@ -65,6 +65,8 @@ curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-sy
 # create remove script
 cd
 touch ~/remove.sh
+echo "What is your Username?: "
+read "user"
 echo "rm /install_part2.sh" >> ~/remove.sh
 echo "rm /home/$user/install_part3.sh" >> ~/remove.sh
 chmod +x ~/remove.sh
