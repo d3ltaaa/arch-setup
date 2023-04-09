@@ -67,8 +67,11 @@ curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-sy
 
 # fonts
 mkdir -p /usr/share/fonts/ttf
-curl https://fonts.google.com/download?family=Ubuntu%20Mono > /usr/share/fonts/ttf/UbuntuMono.zip
-unzip /usr/share/fonts/ttf/UbuntuMono.zip
+curl https://fonts.google.com/download?family=Ubuntu%20Mono > ~/Downloads/UbuntuMono.zip
+cd /usr/share/fonts/ttf
+sudo unzip /usr/share/fonts/ttf/UbuntuMono.zip
+rm UbuntuMono.zip
+rm UFL.txt
 
 # create remove script
 cd
