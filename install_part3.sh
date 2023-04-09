@@ -6,7 +6,9 @@ sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-dev
 	nitrogen xournalpp discord \
 	neofetch ranger git vim \
 	flatpak \
-	fuse2
+	fuse2 \
+	imagemagick
+
 
 systemctl enable bluetooth.service
 systemctl --user enable pulseaudio
