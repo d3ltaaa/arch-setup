@@ -66,7 +66,7 @@ curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-sy
 cd
 touch ~/remove.sh
 echo "rm /install_part2.sh" >> ~/remove.sh
-echo "rm ~/install_part3.sh" >> ~/remove.sh
+echo "rm /home/$user/install_part3.sh" >> ~/remove.sh
 chmod +x ~/remove.sh
 
 echo "Remember: Install Synergy"
