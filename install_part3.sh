@@ -5,7 +5,7 @@ sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-dev
 	firefox thunar \
 	nitrogen xournalpp discord \
 	neofetch ranger git vim \
-	flatpak \
+	flatpak unzip \
 	fuse2 \
 	imagemagick
 
