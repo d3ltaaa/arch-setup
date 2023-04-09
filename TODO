@@ -6,9 +6,7 @@ script: tablet mode
 dwm: clickable taskbar
 dwm: improve taskbar with scripts?
 dmenu: clickable dmenu
-script: delta_arch_install.zsh
 script: volume_menu
 script: settings
-git: find out how to manage scripts
 pacman: learn how to maintain arch
 dm: try lightdm
