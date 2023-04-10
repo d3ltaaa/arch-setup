@@ -37,6 +37,7 @@ git clone https://github.com/d3ltaaa/.setup.git
 
 # setup symlinks
 mkdir -p ~/.config
+ln -s ~/.setup/config/nvim ~/.config
 ln -s ~/.setup/config/suckless ~/.config
 ln -s ~/.setup/config/neofetch ~/.config
 
