@@ -6,7 +6,7 @@ sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-dev
 	nitrogen xournalpp discord \
 	neofetch ranger git neovim \
 	flatpak unzip \
-	fuse2 ripgrep \
+	fuse2 ripgrep pamixer \
 	imagemagick
 
 
@@ -28,7 +28,8 @@ chmod +x remnote
 sudo mv remnote /opt
 
 # Spotify
-sudo yay -S ncspot
+yay -S ncspot
+yay -S brillo
 
 
 # .setup
