@@ -3,9 +3,6 @@ dunst: notifications
 pomodoro + dunst: make it better
 emacs: find out about it and maybe adapt it
 script: tablet mode
-dwm: clickable taskbar
-dwm: improve taskbar with scripts?
-dmenu: clickable dmenu
 script: volume_menu
 script: settings
 pacman: learn how to maintain arch
