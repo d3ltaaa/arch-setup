@@ -61,6 +61,9 @@ sudo make install
 cd ~/.config/suckless/dmenu
 make 
 sudo make install
+cd ~/.config/suckless/dwmblocks
+make
+sudo make install
 
 # wallpapers
 mkdir -p ~/Pictures/Wallpapers
