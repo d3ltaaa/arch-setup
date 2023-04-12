@@ -71,12 +71,12 @@ cd ~/Pictures/Wallpapers
 curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-systems/archlinux.png > archlinux.png
 
 # fonts
-sudo mkdir -p /usr/share/fonts/ttf
+sudo mkdir -p /usr/share/fonts/TTF
 mkdir ~/Downloads
 curl https://fonts.google.com/download?family=Ubuntu%20Mono > ~/Downloads/UbuntuMono.zip
-sudo mv ~/Downloads/UbuntuMono.zip /usr/share/fonts/ttf
-cd /usr/share/fonts/ttf
-sudo unzip /usr/share/fonts/ttf/UbuntuMono.zip
+sudo mv ~/Downloads/UbuntuMono.zip /usr/share/fonts/TTF
+cd /usr/share/fonts/TTF
+sudo unzip /usr/share/fonts/TTF/UbuntuMono.zip
 sudo rm UbuntuMono.zip
 sudo rm UFL.txt
 
