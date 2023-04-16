@@ -50,8 +50,6 @@ rm ~/.bash_profile
 ln -s ~/.setup/system/.bash_profile ~/
 rm ~/.bashrc
 ln -s ~/.setup/system/.bashrc ~/
-ln -s ~/.setup/config/colors.h ~/.config/suckless
-
 
 
 # building suckless software
