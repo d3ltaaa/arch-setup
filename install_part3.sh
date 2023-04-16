@@ -50,10 +50,8 @@ rm ~/.bash_profile
 ln -s ~/.setup/system/.bash_profile ~/
 rm ~/.bashrc
 ln -s ~/.setup/system/.bashrc ~/
-ln -s ~/.setup/config/colors.h ~/.config/suckless/dwm
-ln -s ~/.setup/config/colors.h ~/.config/suckless/st
-ln -s ~/.setup/config/colors.h ~/.config/suckless/dwmblocks
-ln -s ~/.setup/config/colors.h ~/.config/suckless/dmenu
+ln -s ~/.setup/config/colors.h ~/.config/suckless
+
 
 
 # building suckless software
