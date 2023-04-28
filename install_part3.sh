@@ -45,6 +45,8 @@ mkdir -p ~/.config
 ln -s ~/.setup/config/nvim ~/.config
 ln -s ~/.setup/config/suckless ~/.config
 ln -s ~/.setup/config/neofetch ~/.config
+ln -s ~/.setup/config/picom ~/.config
+ln -s ~/.setup/config/dunst ~/.config
 
 ln -s ~/.setup/system/.dwm ~/
 sudo rm -r ~/.scripts
