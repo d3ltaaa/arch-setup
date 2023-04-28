@@ -8,7 +8,7 @@ sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-dev
 	bluez bluez-utils pulseaudio-bluetooth blueman \
 	firefox thunar \
 	nitrogen xournalpp discord \
-	neofetch ranger git neovim \
+	neofetch ranger git neovim dunst\
 	flatpak unzip \
 	fuse2 ripgrep pamixer sox\
 	imagemagick
@@ -34,6 +34,7 @@ sudo mv remnote /opt
 # Spotify
 yay -S ncspot
 yay -S brillo
+yay -S picom-jonaburg-git
 
 
 # .setup
