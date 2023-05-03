@@ -48,7 +48,6 @@ ln -s ~/.setup/config/suckless ~/.config
 ln -s ~/.setup/config/neofetch ~/.config
 ln -s ~/.setup/config/picom ~/.config
 ln -s ~/.setup/config/dunst ~/.config
-ln -s ~/.setup/config/ly ~/.config
 
 ln -s ~/.setup/system/.dwm ~/
 sudo rm -r ~/.scripts
@@ -73,12 +72,6 @@ sudo make install
 cd ~/.config/suckless/dwmblocks
 make
 sudo make install
-
-# ly-dm
-cd ~/.config/ly
-make
-sudo make install installsystemd
-sudo systemctl enable ly.service
 
 # wallpapers
 mkdir -p ~/Pictures/Wallpapers
