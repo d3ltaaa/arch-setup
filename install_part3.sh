@@ -80,13 +80,22 @@ curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-sy
 
 # fonts
 sudo mkdir -p /usr/share/fonts/TTF
+sudo mkdir -p /usr/share/fonts/ICONS
 mkdir ~/Downloads
 curl https://fonts.google.com/download?family=Ubuntu%20Mono > ~/Downloads/UbuntuMono.zip
+curl -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/NerdFontsSymbolsOnly.zip > ~/Downloads/NerdFontIcons.zip
+
 sudo mv ~/Downloads/UbuntuMono.zip /usr/share/fonts/TTF
+sudo mv ~/Downloads/NerdFontIcons.zip /usr/share/fonts/ICONS
 cd /usr/share/fonts/TTF
 sudo unzip /usr/share/fonts/TTF/UbuntuMono.zip
 sudo rm UbuntuMono.zip
 sudo rm UFL.txt
+cd /usr/share/fonts/ICONS
+sudo unzip /usr/share/fonts/ICONS/NerdFontIcons.zip
+sudo rm NerdFontIcons.zip
+sudo rm readme.md
+sudo rm LICENSE
 
 # nvim
 # plug
