@@ -77,7 +77,7 @@ sudo make install
 mkdir -p ~/Pictures/Wallpapers
 cd ~/Pictures/Wallpapers
 curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-systems/archlinux.png > archlinux.png
-curl https://raw.githubusercontent.com/linuxdotexe/nordic-wallpapers/master/wallpapers/ign_nordic_triangle.png
+curl https://raw.githubusercontent.com/linuxdotexe/nordic-wallpapers/master/wallpapers/ign_nordic_triangle.png > triangle.png
 
 # fonts
 sudo mkdir -p /usr/share/fonts/TTF
