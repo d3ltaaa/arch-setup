@@ -77,7 +77,8 @@ sudo make install
 # ly-dm
 cd ~/.config/ly
 make
-sudo make install
+sudo make install installsystemd
+sudo systemctl enable ly.service
 
 # wallpapers
 mkdir -p ~/Pictures/Wallpapers
