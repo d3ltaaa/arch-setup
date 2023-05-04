@@ -6,7 +6,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-devel \
 	alsa-utils pulseaudio pavucontrol \
 	bluez bluez-utils pulseaudio-bluetooth blueman \
-	firefox thunar \
+	firefox thunar w3m imagemagick\
         xournalpp discord \
 	neofetch ranger git neovim dunst xwallpaper \
 	flatpak unzip \
