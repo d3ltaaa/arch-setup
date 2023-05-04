@@ -10,7 +10,7 @@ sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-dev
         xournalpp discord \
 	neofetch ranger git neovim dunst xwallpaper \
 	flatpak unzip \
-	fuse2 ripgrep pamixer sox\
+	fuse2 ripgrep pamixer sox imlib2 \
 	imagemagick
 
 
