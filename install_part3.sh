@@ -8,7 +8,7 @@ sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-dev
 	bluez bluez-utils pulseaudio-bluetooth blueman \
 	firefox thunar \
         xournalpp discord \
-	neofetch ranger git neovim dunst xwallpaper \
+	neofetch ranger git neovim dunst xwallpaper xclip \
 	flatpak unzip \
 	fuse2 ripgrep pamixer sox \
 	imagemagick
