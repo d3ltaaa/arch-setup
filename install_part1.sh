@@ -7,7 +7,7 @@ sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
 timedatectl set-ntp true
 
 fdisk -l
-pacman --noconfirm -Sy
+pacman -Sy
 pacman --noconfirm -S expect
 curl https://raw.githubusercontent.com/d3ltaaa/arch-setup/main/partition_disk.exp > partition_disk.exp
 chmod +x partition_disk.exp
