@@ -1,15 +1,15 @@
 # set -x
 echo part-1
 loadkeys de-latin1
-
-sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
-
 timedatectl set-ntp true
 
-fdisk -l
 pacman -Sy
+
+# sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
+
 pacman --noconfirm -S expect
 curl https://raw.githubusercontent.com/d3ltaaa/arch-setup/main/partition_disk.exp > partition_disk.exp
+fdisk -l
 chmod +x partition_disk.exp
 ./partition_disk.exp
 rm partition_disk.exp
