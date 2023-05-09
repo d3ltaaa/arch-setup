@@ -2,8 +2,8 @@
 sudo sed -i 's/GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/' /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-# xf86-video-amdgpu
-sudo pacman --noconfirm -S xf86-video-fbdev xorg xorg-xinit webkit2gtk base-devel \
+# xf86-video-amdgpu xf86-video-fbdev
+sudo pacman --noconfirm -S xf86-video-amdgpu xorg xorg-xinit webkit2gtk base-devel \
 	alsa-utils pulseaudio pavucontrol \
 	bluez bluez-utils pulseaudio-bluetooth blueman \
 	firefox thunar \
