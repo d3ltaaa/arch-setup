@@ -7,7 +7,7 @@ sudo pacman --noconfirm -S xf86-video-fbdev xorg xorg-xinit webkit2gtk base-deve
 	alsa-utils pulseaudio pavucontrol \
 	bluez bluez-utils pulseaudio-bluetooth blueman \
 	firefox thunar \
-	ls feh \
+	ls feh xdotool \
         xournalpp discord \
 	neofetch ranger git neovim dunst xwallpaper xclip \
 	flatpak unzip \
