@@ -82,6 +82,9 @@ touch ~/.config/wall/picture
 cd ~/Pictures/Wallpapers
 curl https://raw.githubusercontent.com/dxnst/nord-wallpapers/master/operating-systems/archlinux.png > archlinux.png
 curl https://raw.githubusercontent.com/linuxdotexe/nordic-wallpapers/master/wallpapers/ign_nordic_triangle.png > triangle.png
+curl https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/arch-nord-dark.png > arch-nord-dark.png
+curl https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/arch-nord-light.png > arch-nord-light.png
+
 
 # fonts
 sudo mkdir -p /usr/share/fonts/TTF
